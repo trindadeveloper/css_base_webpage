@@ -1,0 +1,174 @@
+/* Slide 1 */
+.buttonEmail{
+    position: absolute;
+    bottom: 1vh;
+    left:1vw;
+    border-radius: 22px;
+    height: 48px;
+    display: block;
+    width: 750px;
+    margin-top: 50px;
+}
+
+#email-form{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.slide1 .btAzul{
+    font-size: 20pt;
+    margin-top: -1px;
+    position: relative;
+}
+
+.email {
+    width: 300px;
+    height: 36px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid var(--cor005);
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.emailsubmit{
+    left: -30px;
+    position: relative;
+    cursor: pointer;
+    border: 0;
+    margin: 0;
+    width: 350px;
+    background: transparent;
+}
+/* Fim - Slide 1 */
+
+.slide2{
+    width: 100%;
+    position: absolute;
+}
+
+.slide2 .btVerde{
+    position: absolute;
+    right: 12vw;
+    bottom: 9vh;
+}
+
+/* Slide 3 */
+
+.slide3 .btVerde{
+    position: absolute;
+    right: 25vw;
+    bottom: 9vh;
+}
+
+.digitado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    margin-top: -23vh;
+    margin-left: 3vw;
+    font-size: 44px;
+    color: white;
+}
+
+/* Cursor */
+.typed-cursor .typed-cursor--blink {
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink .7s infinite;
+    animation: blink .7s infinite;
+    display: inline;
+}
+
+.typed-cursor.typed-cursor--blink {
+    animation: typedjsBlink 0.7s infinite;
+    -webkit-animation: typedjsBlink 0.7s infinite;
+    animation: typedjsBlink 0.7s infinite;
+}
+
+@keyframes typedjsBlink {
+    50% {
+        opacity: 0.0;
+    }
+}
+
+@-webkit-keyframes typedjsBlink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* Fim - Cursor */
+/* Fim - Slide 3 */
+
+
+.slide4 .btVerde{
+    position: absolute;
+    right: 25vw;
+    bottom: 5vh;
+}
+
+/* Slide 5 */
+.slide5 .btAzul{
+    font-size: 20pt;
+    margin-top: -1px;
+    position: relative;
+}
+
+.slide5 .buttonEmail{
+    bottom: 15vh;
+    left: 10vw;
+}
+
+
+/* Fim - Slide 5 */
+
+.slide6 .buttonEmail{
+    bottom: 20vh !important;
+    right: 1vw !important;
+    left: unset;
+}
+
+.slide6 .emailsubmit {
+    width: 400px;
+    margin-top: -3px;
+}
+
+/* Slide 7 */
+.slide7titulo{
+    font-weight: 800;
+    color: var(--cor003) !important;
+    text-align:left !important;
+    padding-left:200px !important;
+    top: 50px;
+}
+
+.slide7Detalhe{
+    color: gray;
+    padding-left:200px !important;
+    top: 50px;
+}
+
+.slide7img{
+    position: relative;
+    padding-left:15vw !important;
+    top: 80px;
+
+}
+
+/* Fim - Slide 7 */

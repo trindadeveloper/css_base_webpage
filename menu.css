@@ -1,0 +1,118 @@
+/* Menu */
+.menu {
+    position: relative;
+    max-width: var(--maxwidth);
+    margin: 0 auto !important;
+    float: none !important;
+    top: 5px;
+    text-align: center;
+    z-index: 40;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+    white-space: nowrap;
+    --web-animation: fadein 0.3s ease-out;
+    --web-action-type: page;
+    cursor: pointer;
+    line-height: 4vh;
+    text-align: center;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    color: var(--cor003);
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 32px;
+    color: var(--cor003);
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.menu li:hover {
+    /*
+    background-color: rgb(25 39 68);
+    color:#fff;
+    outline: 6px solid rgb(25 39 68);
+    border-radius: 5px;
+    box-shadow: 0 0 3pt 2pt rgb(25 39 68);
+    */
+    text-decoration: underline;
+}
+
+/* Fim - Menu */
+
+/* Submenu */
+.menu ul.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul.submenu li {
+    line-height: unset;
+    display: block;
+    margin: 0;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    color: #303030;
+    font-weight: normal;
+    text-transform: none;
+    text-align: left;
+}
+
+.menu ul.submenu li:hover {
+    background-color: var(--cor002);
+    color: white;
+}
+
+.menu li:hover>ul.submenu {
+    display: block;
+}
+/* Fim - Submenu */
+
+/* Responsivo */
+@media (max-width: 1300px) {
+    .menu li, .menu li:hover>ul.submenu  {
+        display: none;
+    }
+
+    .menu ul{
+        position: absolute;
+        top:50px;
+        left:20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        display: block;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .menu li.active {
+        display: block;
+        text-align: left;
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+}
+/* Fim - Responsivo */

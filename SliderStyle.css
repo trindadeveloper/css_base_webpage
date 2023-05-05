@@ -1,0 +1,196 @@
+:root {
+  --cor001: #6fb741;
+  --cor002: #9dcc7e;
+  --cor003: #192744;
+  --cor004: #f9f9a3;
+  --cor005:#0b4994;
+}
+
+.slider {
+  position: relative;
+  width: var(--maxwidth);
+  min-height: 385px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.sButton{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+  bottom: 14vh;
+}
+
+.activeSlide {
+  transition: unset !important;
+}
+
+.slide-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s, clip-path 1s;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.indicator {
+  position: absolute;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  justify-content: center;
+  height: 65vh;
+}
+
+.btAzul{
+	background-color: var(--cor003);
+	color: white;
+	padding: 5px 15px 7px 15px;
+	font-size: 22pt;
+	border-radius: 0px 15px;
+	text-transform: uppercase;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(117, 117, 117, 0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(117, 117, 117, 0.75);
+	box-shadow: 10px 10px 5px 0px rgba(117, 117, 117, 0.75);
+}
+
+.btAzul a, .BtnExperimente a:hover, .BtnExperimente a:visited{
+	color: white;
+	text-decoration: none;
+}
+
+button .btAzul:hover{
+	color:var(--cor002);
+}
+
+.btAzul:active{
+transform: translateY(2px);
+  box-shadow: 0 1px 0 0 #ccc;
+}
+
+
+.circle {
+  width: 6px;
+  aspect-ratio: 1;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: all 0.5s ease;
+}
+
+.circle.active {
+  width: 12px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.bloco{
+  width: var(--maxwidthBlock) !important;
+  display: inline-block !important;
+  overflow: hidden !important;
+  height: 100%;
+}
+
+/* Texto */
+.slide-wrapper .sText{
+  color: white; /*var(--cor004);  */
+  font-size: 15pt;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.sText .sDetalhes{
+  display: block;
+  position: relative;
+  width: unset;
+  line-height: 1.2;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.sText .sTitulo{
+  font-size: 20pt;
+  display: block;
+  position: relative;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-top: 15%;
+  
+}
+/* Fim - Texto */
+
+/* Simg */
+.sImg{
+  overflow: hidden;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.sImg img {
+  width: 100%;
+}
+
+/* Fim - Simg */
+
+@media (max-width: 1300px) {
+
+  .slide-wrapper .sText{
+    right: 0px;
+    top: 0px;
+    display: block;
+  }
+
+  .slider {
+    padding: 0px;
+    vertical-align: top;
+    width: 100vw;
+    height: 70vh;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .slide {
+    width: 100vw;
+    height: 70vh;
+  }
+
+
+  .slide .sText{
+    height: 20vh;
+  }
+
+  .slide-wrapper {
+    height: 70vh;
+  }
+
+  .indicator {
+    right: unset;
+    bottom: 50px;
+    flex-direction: row;
+  }
+
+  .circle{
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,146 @@
+:root {
+    --cor001: #70ad47;
+    --cor002: #9dcc7e;
+    --cor003: #192744;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/font/Roboto-Regular.ttf") format("truetype");
+}
+
+body, html {
+    overflow: hidden;
+    max-width: 1366px;
+    margin: 0 auto !important;
+    float: none !important;
+}
+
+html * {
+    font-family: Roboto;
+}
+
+/* Tela */
+.half {
+    position: fixed;
+    height: 50%;
+    width: 100%;
+    max-width: 1366px;
+    overflow: hidden;
+}
+
+.top{
+    top:0px;
+}
+
+.bottom{
+    bottom:0px;
+}
+/* Fim - Tela */
+
+/* Top */
+/* Logo */
+.logocontainer *{
+    
+}
+
+.logocontainer{
+    position: relative;
+    display: block;
+    max-height: calc(50vw);
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+
+.logoimg {
+    height: calc(8vw);
+    width: calc(height*5);
+}
+
+.slogan {
+    text-align: right;
+    font-size: calc(2.5vw);
+    color:var(--cor003);
+}
+
+.logocontainer .left, .logocontainer .right{
+    display: inline-block;
+}
+
+.florklogo{
+    display: inline-block;
+    height: calc(13vw);
+}
+/* Fim - Logo */
+
+/* Experimente */
+.experimente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.experimente .texto {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    background-color:var(--cor001);
+    padding: 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.experimente img {
+    height: 40px;
+    vertical-align: middle;
+    width: 40px;
+    background-color: white;
+}
+
+.experimente .texto:hover {
+    background-color:var(--cor002);
+    border-radius: 5px;
+}
+/* Fim - Experimente */
+/* Fim - Top */
+
+
+/* Rodapé  */
+.rodape {
+    position: absolute;
+    width: 1366px;
+    bottom: 5px;
+    text-align: center;
+}
+
+.rodape div{
+    text-align:left;
+}
+
+.rodape .contato{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.rodape .material-symbols-outlined{
+    color:var(--cor001);
+    font-size: 22pt;
+    height: 100%;
+    line-height:unset;
+}
+
+.rodape .cText{
+    display: inline-block;
+    height: 100%;
+}
+
+.rodape .dado{
+    color: #303030;
+}
+
+.rodape .extra{
+    font-size: 10pt;
+    color: gray;
+}
+/* Fim - Rodapé  */
